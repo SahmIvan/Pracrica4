@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <!--LA semantica en HTML, es el correcto uso de las etiquetas para mejorar la comprension y accesibilidad de la pagina por parte del navegador-->
+    <!--Se podria poiner sin indicar que es un nav, pero el navegador prioriza y agradece cuando se leindican las cosas que se integran en el sitio web, por lo que dara preferencia a los que cumplan con una correcta semantica-->
+        <nav>
+            <a href="/html/">HTML</a> |
+            <a href="/css/">CSS</a> |
+            <a href="/js/">JavaScript</a> |
+            <a href="/jquery/">jQuery</a>
+        </nav>
+    
+    <section id="seccion 1">
+        <h1>Seccion 1</h1> <!--En una pagina, se recomienda que solo exista 1 H1, y se utilicen H2 para los titulos restantes, eso indica y prioriza la semantica en el navegador-->
+        <p>La semántica en HTML se refiere a la manera en que se utilizan las etiquetas HTML para proporcionar información significativa sobre el contenido de una página web.</p>
+    </section>
+    
+    <section id="seccion2">
+        <h2>Sección 2</h2>
+        <p>La semántica ayuda a los motores de búsqueda y a los lectores de pantalla a entender mejor el contenido de la página, lo que puede mejorar la accesibilidad y la experiencia del usuario.</p>
+    </section>
+    
+    <article class="all browsers">
+        
+        <article class="browser">
+            <h2>Navegadores Populares</h2>
+            <p>Lista de Navegadores</p>
+        </article>
+        
+        <article class="browser">
+            <h2>Chrome</h2>
+            <p>Navegador Google Chrome por Google</p>
+        </article>
+        <article class="browser">
+            <h2>Firefox</h2>
+            <p>Navegador Firefox por Fox</p>
+        </article>
+        <article>
+            <h2>Edge</h2>
+            <p>Navegador Microsoft Edge por Microsoft</p>
+        </article>
+
+    </article>
+    
+    <article>
+        <header>
+            <h1>Encabezado</h1>
+            <p>Texto</p>
+        </header>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </article>
+    
+    <footer>
+        <p>Autor: Ivan</p>
+        <p><a href="ivan_gtm@putlook.com">Ivan_gtm@outlook.com</a></p>
+    </footer>
+    <p>Titulo</p>
+    <aside>
+        <p>Esta es una barra lateral</p>
+    </aside>
+    <figure>
+        <img src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="Google" width="150px">
+        <figcaption>Google logo.</figcaption>
+    </figure>
+
+    <details>
+        <summary>Este es un resumen</summary>
+        <p>La semantica de HTML se refiere a la manera en que se utiliza</p>
+    </details>
+    <details>
+        <summary>Este es un resumen 2</summary>
+        <p>La semantica de HTML se refiere a la manera en que se utiliza</p>
+    </details>
+    <main>
+        <article>
+            <p>Un artículo</p>
+            <p>Contenido</p>
+            <p>Resaltar partes de un texto es <mark>importante</mark> relacionado a la info.</p>
+        </article>
+    </main>
+    
+    <mark>Texto resaltado</mark>
+    
+    <p>Abierto de las 10am <time>10:00</time> a las <time>21:00</time>hrs</p> <!--Esto no cambia nada visualmente, pero el navegador detecta que esas son horas y lo agradece-->
+</body>
+</html><!--pwd: print working directory en Terminal de VSCode para ver la direcion local en la que se esta tarabajando-->
